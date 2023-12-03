@@ -37,12 +37,12 @@ dependencies = [
     "weaviate-client>=3.25.3",
     "python-dotenv>=1.0.0",
     "kaleido",            # lida 0.0.10 requires kaleido
-    "cohere",              # llx 0.0.15a0 requires cohere && tensorflow-probability 0.22.0 requires typing-extensions<4.6.0 (4.8 is not compat)
-    "typing-extensions>=4.6.0"
+    "cohere",              # llx 0.0.15a0 requires cohere 
+    "typing-extensions<4.6.0"                # tensorflow-probability 0.22.0 requires typing-extensions<4.6.0 (4.8 is not compat)
 ]
 
 [project.optional-dependencies]
-dev = ["black>=23.7.0", "mypy>=1.5.1"]
+dev = ["black>=23.7.0", "mypy>=1.5.1", "typing-extensions>=4.6.0"]
 
 # todo: https://setuptools.pypa.io/en/latest/userguide/datafiles.html 
 
