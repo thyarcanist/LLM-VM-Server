@@ -35,7 +35,10 @@ dependencies = [
     "pinecone-client>=2.2.4",
     "PyPDF2>=3.0.1",
     "weaviate-client>=3.25.3",
-    "python-dotenv>=1.0.0"
+    "python-dotenv>=1.0.0",
+    "kaleido",            # lida 0.0.10 requires kaleido
+    "cohere",              # llx 0.0.15a0 requires cohere && tensorflow-probability 0.22.0 requires typing-extensions<4.6.0 (4.8 is not compat)
+    "typing-extensions>=4.6.0"
 ]
 
 [project.optional-dependencies]
