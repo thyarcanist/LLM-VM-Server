@@ -38,7 +38,7 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "kaleido",            # lida 0.0.10 requires kaleido
     "cohere",              # llx 0.0.15a0 requires cohere 
-    "typing-extensions=4.6.0"                # tensorflow-probability 0.22.0 requires typing-extensions<4.6.0 (4.8 is not compat)
+    "typing-extensions>=4.6.0"                # tensorflow-probability 0.22.0 requires typing-extensions<4.6.0 (4.8 is not compat)
 ]
 
 [project.optional-dependencies]
