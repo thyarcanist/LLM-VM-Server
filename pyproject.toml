@@ -1,7 +1,7 @@
 [project]
-name = "llm_vm"
+name = "llm_vm_server"
 version = "0.1.55"
-description = "An Open-Source AGI Server for Open-Source LLMs"
+description = "An Open-Source AGI Server for Open-Source LLMs, forked from LLM-VM"
 authors = [{ name = "Anarchy Team", email = "matt@anarchy.ai" }]
 
 
@@ -65,7 +65,7 @@ include-package-data = true
 where = ["src"] # this is the default i think
 
 [tool.setuptools.package-data]
-llm_vm = [
+llm_vm_server = [
     "*.toml",
 ] # note how the left hand side, the key, needs to be the package name/namespace
 
@@ -82,7 +82,7 @@ python_files = "*.py"
 # python_functions = "*_check"
 
 [tool.mypy]
-exclude = ['venv', '.venv', 'src/llm_vm/agents'] # agents is complicated
+exclude = ['venv', '.venv', 'src/llm_vm_server/agents'] # agents is complicated
 
 # these are strawman configs
 [tool.black]
